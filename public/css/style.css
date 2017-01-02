@@ -72,7 +72,9 @@ body {
 }
 a {text-decoration: none;
 	outline:none;}
-
+	.body-section {
+		background-image: url('/images/Vines_Frame_Vector.jpg');
+	}
 .container {
 	overflow: hidden;
 	background-color: #000;
