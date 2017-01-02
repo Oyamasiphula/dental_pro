@@ -20,7 +20,8 @@
     "bower": "^1.7.0",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.0.5",
+    "nodemon": "^1.11.0"
   },
   "devDependencies": {}
 }
