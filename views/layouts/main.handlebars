@@ -1,8 +1,16 @@
 <html lang="en">
 <head>
 	<title>Dental Health</title>
+	<meta charset="utf-8" />
+
+ <link rel="stylesheet" href="/css/semantic.min.css"/>
+ <script src="/behaviour/js/jquery.min.js"></script>
+ <script src="/behaviour/js/semantic.min.js"></script>
+
 	<script type="text/javascript" src="/behaviour/js/auto_lancer.js"></script>
+	<link rel="stylesheet" href="/css/clockWidget.css">
 	<link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
 <div class="container">
@@ -14,18 +22,38 @@
 			<li></li>
 			<li></li>
 		</ul>
-		<h1><a href="#">Dr Jones's dental health</a></h1>
+		<h1><a href="/">
+
+			<img class="logo" src="/images/oral_health-128.gif"/> Dr Jones</a></h1>
 	</header>
 	<nav class="slideLeft">
 		<ul>
-			<li><a href="http://ibrahimjabbari.com" class="active"><i class="dgicon-home"></i> Home</a></li>
-			<li><a href="#"><i class="dgicon-users"></i> About Us</a></li>
+			<li><a href="/" class="active"><i class="dgicon-home"></i> Home</a></li>
 			<li><a href="#"><i class="dgicon-tools"></i> Services</a></li>
+			<li><a href="#"><i class="dgicon-window"></i> Back to Portfolio</a></li>
+			<li><a href="#"><i class="dgicon-users"></i> About</a></li>
 			<li><a href="#"><i class="dgicon-vcard"></i> Contact Us</a></li>
-			<li><a href="#"><i class="dgicon-window"></i> Back to Article</a></li>
 		</ul>
 	</nav>
 </div>
-{{{body}}}
+<div class="content slideRight">
+  <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+  <ul class="responsive">
+    <li class="header-section">
+      <img src="/images/logo.gif"/>
+    </li>
+    <li class="body-section">
+			{{{body}}}
+    </li>
+    {{>footer}}
+  </ul>
+</div>
 </body>
+<script type="text/javascript" src="/behaviour/js/clock.js"></script>
 </html>
+
+<style media="screen">
+.body-section {
+	background-image: url('/images/Vines_Frame_Vector.jpg');
+}
+</style>
