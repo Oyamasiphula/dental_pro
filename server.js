@@ -21,9 +21,11 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.get('/', function(req, res){
 	res.render('home');
 })
-app.get('about',function(req,res){
+app.get('/about',function(req,res){
   res.render('about');
-
+})
+app.get("/services", function(req,res){
+    res.render("services")
 })
 // <portSetup>port delcaration
 var port = process.env.port || 2000
