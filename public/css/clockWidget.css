@@ -82,22 +82,27 @@ span {
 }
 
 .h12 {
-  top: 30px;
-  left: 50%;
+  top: 28px;
+  left: 51%;
+  font-size: initial;
   margin-left: -9px;
 }
 .h3 {
   top: 140px;
   right: 30px;
+  font-size: initial;
 }
 .h6 {
   bottom: 30px;
-  left: 50%;
-  margin-left: -5px;
+  left: 51%;
+  font-size: initial;
+  margin-left: -4px;
 }
+
 .h9 {
   left: 32px;
   top: 140px;
+  font-size: initial;
 }
 
 .diallines {
