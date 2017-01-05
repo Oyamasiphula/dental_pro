@@ -76,12 +76,11 @@ a {text-decoration: none;
 		background-image: url('/images/Vines_Frame_Vector.jpg');
 	}
 .container {
-	overflow: hidden;
-	background-color: #000;
-/*  Prevents Flickering  */
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
+		overflow: hidden;
+	    background-color: #f9d6e0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
 }
 
 .basic_cont {
@@ -109,7 +108,6 @@ header h1 a:hover {color: #2d2321;}
 	top: 4px;
 	left: 10px;
 	cursor:pointer;
-
 	display: none;
 }
 .burger li {
@@ -136,7 +134,6 @@ nav li a {
 	color: #fff;
 	padding: 22px 15px;
 	font-weight:600;
-
 	display: block;
 }
 nav li a:hover {color: #2d2321;}
@@ -182,19 +179,18 @@ to {
 }
 
 .fade-top {
-position:absolute;
-top: 0;
-left: 0;
-right: 0;
-height: 50px;
-
-background: -webkit-linear-gradient(bottom, rgba(0,180,212,0), #00b4d4);
+		position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: -webkit-linear-gradient(bottom, rgba(0,180,212,0), #e44d7b);
 }
 
 .dots {
-    height: 250px;
+	 	height: 133px;
     width: 100%;
-    position: inherit;
+    position: relative;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -212,7 +208,13 @@ background: -webkit-linear-gradient(bottom, rgba(0,180,212,0), #00b4d4);
 }
 
 /* Dot animation*/
-
+div #ui_tall_stacked_segment {
+    text-align: center;
+  }
+div #ui_tall_stacked_segment .footer-below {
+    text-align: right;
+    margin-top: -3em;
+}
 .header-section {background-color: #d9dde1;text-align: center; border: ridge;
 }
 .body-section {background-color: #fdfdfd;text-align: center;}
@@ -232,19 +234,19 @@ background: -webkit-linear-gradient(bottom, rgba(0,180,212,0), #00b4d4);
 }
 /*parallelogram style*/
 #parallelogram {
-		width: 371px;
-		height: 151px;
-		-webkit-transform: skew(20deg);
-		-moz-transform: skew(20deg);
-		-o-transform: skew(20deg);
-		margin: 0 auto;
-		border: 3px solid #6D0E0F;
-		overflow: hidden;
-		position: absolute;
-		visibility: visible;
-		left: 227px;
-		top: 785px;
-		z-index: 200;
+    width: 371px;
+    height: 136px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    margin: 0 auto;
+    border: 3px solid #6D0E0F;
+    overflow: hidden;
+    position: absolute;
+    visibility: visible;
+    left: 227px;
+    top: 785px;
+    z-index: 200;
 }
 #parallelogram:hover {
   border-color: GREEN;
@@ -274,7 +276,9 @@ background: -webkit-linear-gradient(bottom, rgba(0,180,212,0), #00b4d4);
 	font-weight: 600;
 }
 /*parallelogram style*/
-
+.footer-below{
+  font-size: 14px;
+}
 @media only screen and (max-width: 780px) {
 
 header {
