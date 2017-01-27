@@ -17,6 +17,7 @@
     "url": "https://github.com/Oyamasiphula/free_basic_mobile_app/issues"
   },
   "dependencies": {
+    "@nodemailer/pro": "^1.0.0",
     "bower": "^1.7.0",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
