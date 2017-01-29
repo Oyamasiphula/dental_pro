@@ -1,7 +1,9 @@
 var express = require('express'),
     exphbs = require('express-handlebars'),
-    // products = require('./routes/products');
+    bodyParser = require('body-parser'),
+    products = require('./routes/products'),
     mysql = require('mysql'),
+    nodemailer = require('@nodemailer/pro'),
     myConnection = require('express-myconnection');
 
 
@@ -28,6 +30,11 @@ app.use('/bower_components', express.static(__dirname + '/bower_components'));
 // </layout>
 
 // middleware below
+app.use(bodyParser.urlencoded({
+    extended: false
+  }))
+  // parse application/json
+app.use(bodyParser.json())
 // ...code
 app.use(myConnection(mysql, dbOptions, 'single'));
 // middleware above
@@ -42,9 +49,13 @@ app.get('/about', function(req, res) {
 app.get("/services", function(req, res) {
         res.render("services")
     });
-app.get("/appointment_schedule",function(req,res){
+app.get("/sentMailFeedback", function(req, res) {
+        res.render("mailFeed")
+    });
+app.get("/appointment_schedule/addlogRec",function(req,res){
     res.render("appointment_sched");
 });
+app.post("/appointment_schedule/addlogRec", products.appointmentArrangmentMailer)
     // <portSetup>port delcaration
 var port = process.env.port || 2000
     // </portSetup>
