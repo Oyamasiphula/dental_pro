@@ -416,7 +416,10 @@ div #animated_butt{
         box-shadow: none;
         border-radius: 5px;
     }
-
+  textarea[type="text"] {
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+	}
     input[type="text"]:focus {
         outline: none;
     }
@@ -429,7 +432,11 @@ div #animated_butt{
 
     .style-1 input[type="text"]:focus,
     .style-1 input[type="text"].focus {
-        border: solid 4px #37C8D8;
+        border: solid 4px #eb7d9f;
+    }
+    .style-1 textarea[type="text"]:focus,
+    .style-1 textarea[type="text"].focus {
+        border: solid 4px  #eb7d9f;
     }
 
     .contact-button {
