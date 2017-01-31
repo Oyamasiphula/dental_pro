@@ -178,7 +178,13 @@ to {
   background-position: 0 -100px
 }
 }
-
+#sentMailResp {
+	font-size: large;
+	text-align: inherit;
+	color: #965445;
+	padding-bottom: 50px;
+	display: inline-flex;
+}
 .fade-top {
 		position: absolute;
     top: 0;
