@@ -4,20 +4,20 @@ const nodemailer = require('@nodemailer/pro');
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'gmail.oyamasiphula@gmail.com',
-        pass: 'oyamasi2241'
+        user: process.env.USERAUTH_USERNAME,
+        pass: process.env.USERAUTH_USERPASS
     }
 });
 
 // setup email data with unicode symbols
 let mailOptions = {
-    from: '"Fred Foo 👻" <oyamasiphula@gmail.com>', // sender address
-    to: 'oyamasiphula@gmail.com', /* oyama@projectcodex.co',  list of receivers */
-    subject: 'Hello ✔', // Subject line
-    text: 'Hello world ?', // plain text body
-    html: '<b>Hello world ?</b>' // html body
+    from: '"oyama siphula 👻" <oyamasiphula@gmail.com>', // sender address
+    to: 'oyama@projectcodex.co', /* oyama@projectcodex.co',  list of receivers */
+    subject: 'Appointment Arrangment ✔', // Subject line
+    text: 'Hello I would like to make an appointment for this reason ...', // plain text body
+    html: '<b>Hello I would like to make an appointment for this reason ... </b>' // html body
 };
-
+console.log(mailOptions);
 // send mail with defined transport object
 transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
